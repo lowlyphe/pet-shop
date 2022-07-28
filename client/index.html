@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kyle's Petshop</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="script.js" async defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- read -->
+    <div class="flex flex-col w-40 justify-center mx-auto">
+      <button class="myButton bg-gray-500 rounded-lg">Get All Pets</button>
+      <input class="petid w-24" type="text" placeholder="Pet ID" />
+      <button class="searchBtn bg-gray-500 rounded-lg">Search</button>
+      <!-- create -->
+      <form action="#" class="createForm">
+        <input type="text" placeholder="name" class="name" />
+        <input type="text" placeholder="age" class="age" />
+        <input type="text" placeholder="kind" class="kind" />
+        <input type="text" placeholder="owner" class="owner" />
+      </form>
+      <button class="create bg-gray-500 rounded-lg">Create Pet</button>
+      <!-- update -->
+      <form action="#" class="updateForm">
+        <input type="text" placeholder="name" class="upname" />
+        <input type="text" placeholder="age" class="upage" />
+        <input type="text" placeholder="kind" class="upkind" />
+        <input type="text" placeholder="owner" class="upowner" />
+        <input type="text" placeholder="pet id" class="upid" />
+      </form>
+      <button class="update bg-gray-500 rounded-lg">Update Pet</button>
+      <!-- delete -->
+      <form action="#" class="deleteForm">
+        <input type="text" placeholder="pet id" class="delid" />
+      </form>
+      <button class="delete bg-gray-500 rounded-lg">Delete Pet</button>
+    </div>
+    <div
+      class="results flex w-40 flex-col justify-center mx-auto border-solid border-2 border-black rounded-md my-6"
+    ></div>
+  </body>
+</html>
